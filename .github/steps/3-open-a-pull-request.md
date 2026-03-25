@@ -10,7 +10,7 @@ _커밋을 잘 만드셨습니다! :sparkles:_
 
 커밋 후 최근 브랜치로의 푸시를 알리는 메시지와 **Compare & pull request** 버튼이 표시되는 것을 보셨을 수 있습니다.
 
-![메시지와 버튼 스크린샷](../images/compare-pull-request-button.png)
+![메시지와 버튼 스크린샷](https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/compare-pull-request-button.png)
 
 풀 리퀘스트를 자동으로 만들려면 **Compare & pull request** 버튼을 클릭한 다음 아래 5단계로 건너뛰세요. 또는 처음 4단계를 사용하여 수동으로 만드는 연습을 해보세요.
 
@@ -21,7 +21,7 @@ _커밋을 잘 만드셨습니다! :sparkles:_
    - **base:** `main`
    - **compare:** `my-first-branch`
 
-   ![두 브랜치 선택을 보여주는 스크린샷](../images/branch-selection-comparison.png)
+   ![두 브랜치 선택을 보여주는 스크린샷](https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/branch-selection-comparison.png)
 
 4. **Create pull request**를 클릭하세요.
 
@@ -29,7 +29,7 @@ _커밋을 잘 만드셨습니다! :sparkles:_
 
 6. 다음 필드는 변경 사항에 대한 **설명**을 제공하는 데 도움이 됩니다. 지금까지 수행한 작업에 대한 짧은 설명을 입력하세요. 참고로, 여러분은 새 브랜치를 만들고, 파일을 만들고, 커밋을 했습니다.
 
-   ![풀 리퀘스트를 보여주는 스크린샷](../images/create-pull-request-form.png)
+   ![풀 리퀘스트를 보여주는 스크린샷](https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/create-pull-request-form.png)
 
 7. **Create pull request**를 클릭하세요.
 

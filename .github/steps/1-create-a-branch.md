@@ -24,7 +24,7 @@ GitHub Docs의 "[저장소에 대하여](https://docs.github.com/en/repositories
 GitHub 프로필에서 GitHub.com 커뮤니티와 자신에 대한 정보를 공유할 수 있는 "자기소개" 섹션입니다.
 GitHub는 프로필 페이지 상단에 프로필 README를 표시합니다. 자세한 내용은 "[프로필 README 관리하기](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)"를 참고하세요.
 
-![프로필 README 예시를 보여주는 스크린샷](../images/example-profile-readme.png)
+![프로필 README 예시를 보여주는 스크린샷](https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/example-profile-readme.png)
 
 ### :keyboard: 활동: 첫 번째 브랜치
 
@@ -32,11 +32,11 @@ GitHub는 프로필 페이지 상단에 프로필 README를 표시합니다. 자
 
 2. 저장소 헤더 메뉴에서 **< > Code** 탭으로 이동하세요.
 
-   ![Code 탭을 강조하는 스크린샷](../images/code-tab-highlight.png)
+   ![Code 탭을 강조하는 스크린샷](https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/code-tab-highlight.png)
 
 3. **main** 브랜치 드롭다운을 클릭하세요.
 
-   <img width="300" alt="브랜치 선택을 강조하는 스크린샷" src="../images/branch-selection-dropdown.png">
+   <img width="300" alt="브랜치 선택을 강조하는 스크린샷" src="https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/branch-selection-dropdown.png">
 
 4. **Find or create a branch...** 텍스트 상자에 `my-first-branch`를 입력하세요.
    
@@ -44,7 +44,7 @@ GitHub는 프로필 페이지 상단에 프로필 README를 표시합니다. 자
 
 5. **Create branch: `my-first-branch` from main** 텍스트를 클릭하여 브랜치를 만드세요.
 
-   <img width="300" alt="브랜치 생성 프롬프트를 강조하는 스크린샷" src="../images/create-branch-prompt.png">
+   <img width="300" alt="브랜치 생성 프롬프트를 강조하는 스크린샷" src="https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/create-branch-prompt.png">
 
    - 브랜치가 방금 만든 브랜치로 자동 전환됩니다.
    - **main** 브랜치 드롭다운 메뉴에 새 브랜치 이름이 표시됩니다.

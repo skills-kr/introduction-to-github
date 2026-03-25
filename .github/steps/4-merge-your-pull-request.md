@@ -6,7 +6,7 @@ _잘 하셨습니다! :sunglasses:_
 
 **병합(Merge)이란?**: _[병합](https://docs.github.com/en/get-started/quickstart/github-glossary#merge)_ 은 풀 리퀘스트와 브랜치의 변경 사항을 `main` 브랜치에 추가합니다. 병합에 대한 자세한 내용은 "[풀 리퀘스트 병합하기](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)"를 참고하세요.
 
-![초록색 병합 버튼 스크린샷](../images/merge-pull-request-button.png)
+![초록색 병합 버튼 스크린샷](https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/merge-pull-request-button.png)
 
 ### :keyboard: 활동: 풀 리퀘스트 병합
 
@@ -20,7 +20,7 @@ _잘 하셨습니다! :sunglasses:_
 
 3. 브랜치가 병합되면 더 이상 필요하지 않습니다. 이 브랜치를 삭제하려면 **Delete branch**를 클릭하세요.
 
-   ![브랜치 삭제 버튼을 보여주는 스크린샷](../images/delete-branch-button.png)
+   ![브랜치 삭제 버튼을 보여주는 스크린샷](https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/delete-branch-button.png)
 
 4. 작업이 병합되면 Mona가 확인하고 최종 리뷰 내용을 공유합니다. 수고하셨습니다! 🎉
 

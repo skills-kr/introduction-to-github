@@ -17,7 +17,7 @@ _브랜치를 만들었습니다! :tada:_
 
 2. **Add file** 드롭다운을 선택하고 **Create new file**을 클릭하세요.
 
-   <img width="300" alt="새 파일 만들기 옵션 스크린샷" src="../images/create-new-file-option.png">
+   <img width="300" alt="새 파일 만들기 옵션 스크린샷" src="https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/create-new-file-option.png">
 
 3. **Name your file...** 필드에 `PROFILE.md`를 입력하세요.
 
@@ -27,7 +27,7 @@ _브랜치를 만들었습니다! :tada:_
    Welcome to my GitHub profile!
    ```
 
-   ![profile.md 파일 추가 스크린샷](../images/add-profile-file.png)
+   ![profile.md 파일 추가 스크린샷](https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/add-profile-file.png)
 
 5. 내용 상자 오른쪽 상단의 **Commit changes...**를 클릭하세요. 대화 상자가 나타납니다.
 
@@ -35,7 +35,7 @@ _브랜치를 만들었습니다! :tada:_
    
    - **커밋 메시지**와 선택적 **확장 설명**은 변경 사항에 대한 명확성을 제공하는 데 도움이 됩니다. 커밋에 여러 파일이 포함될 때 특히 유용합니다.
 
-   <img width="400" alt="커밋 메시지와 함께 새 파일을 추가하는 스크린샷" src="../images/commit-message-dialog.png">
+   <img width="400" alt="커밋 메시지와 함께 새 파일을 추가하는 스크린샷" src="https://raw.githubusercontent.com/skills-kr/introduction-to-github/main/.github/images/commit-message-dialog.png">
 
 6. 이 레슨에서는 다른 필드를 무시하고 **Commit changes**를 클릭합니다.
 
