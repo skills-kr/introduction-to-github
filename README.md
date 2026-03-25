@@ -1,47 +1,49 @@
-# Introduction to GitHub
+# GitHub 소개
 
-_Get started using GitHub in less than an hour._
+_1시간 이내에 GitHub 사용법을 배워보세요._
 
-## Welcome
+## 환영합니다
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
+사람들은 GitHub를 사용하여 세계에서 가장 진보된 기술들을 만듭니다. 데이터를 시각화하든 새로운 게임을 만들든, GitHub에는 더 나은 결과를 만들 수 있도록 도와주는 커뮤니티와 도구들이 있습니다. GitHub Skills의 "GitHub 소개" 실습은 1시간 이내에 기여를 시작하는 데 필요한 모든 것을 안내합니다.
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This exercise is a great introduction for your first day on GitHub.
-- **How long**: This exercise takes less than one hour to complete.
+- **대상**: 새로운 개발자, GitHub 초보 사용자, 학생
+- **배울 내용**: 저장소(repository), 브랜치(branch), 커밋(commit), 풀 리퀘스트(pull request)를 소개합니다.
+- **만들 것**: [프로필 README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)로 사용할 수 있는 짧은 마크다운 파일을 만듭니다.
+- **사전 요구사항**: 없음. 이 실습은 GitHub 첫날에 딱 맞는 소개입니다.
+- **소요 시간**: 이 실습은 1시간 이내에 완료할 수 있습니다.
 
-In this exercise, you will:
+이 실습에서 다음을 수행합니다:
 
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
+1. 브랜치 만들기
+2. 파일 커밋하기
+3. 풀 리퀘스트 열기
+4. 풀 리퀘스트 병합하기
 
-### How to start this exercise
+### 이 실습을 시작하는 방법
 
-Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
+실습을 내 계정으로 복사한 뒤, Octocat(Mona)이 첫 번째 레슨을 준비할 때까지 **약 20초** 기다린 후 **페이지를 새로고침**하세요.
 
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github&description=Exercise:+Introduction+to+GitHub&visibility=public)
+[![](https://img.shields.io/badge/실습%20복사-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills-kr&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github&description=실습:+GitHub+소개&visibility=public)
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>문제가 있나요? 🤷</summary><br/>
 
-When copying the exercise, we recommend the following settings:
+실습을 복사할 때 다음 설정을 권장합니다:
 
-- For owner, choose your personal account or an organization to host the repository.
+- 소유자(owner)는 개인 계정 또는 조직(organization)을 선택하세요.
 
-- We recommend creating a public repository, since private repositories will use Actions minutes.
+- 비공개 저장소는 Actions 사용 시간이 소모되므로 공개 저장소를 만드는 것을 권장합니다.
 
-If the exercise isn't ready in 20 seconds, please check the [Actions](../../actions) tab.
+20초 후에도 실습이 준비되지 않으면 [Actions](../../actions) 탭을 확인하세요.
 
-- Check to see if a job is running. Sometimes it simply takes a bit longer.
+- 작업이 실행 중인지 확인하세요. 때로는 조금 더 오래 걸릴 수 있습니다.
 
-- If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
+- 실패한 작업이 표시되면 이슈를 제출해 주세요. 버그를 발견하셨네요! 🐛
 
 </details>
 
 ---
+
+> **참고**: 이 실습은 [skills/introduction-to-github](https://github.com/skills/introduction-to-github)를 기반으로 한글화하고, 워크샵 트래커 대시보드와 연계하여 각색한 버전입니다.
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)

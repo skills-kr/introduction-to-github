@@ -1,46 +1,46 @@
-## Step 3: Open a pull request
+## 3단계: 풀 리퀘스트 열기
 
-_Nice work making that commit! :sparkles:_
+_커밋을 잘 만드셨습니다! :sparkles:_
 
-Now that you have made a change to the project and created a commit, it’s time to share your proposed change through a pull request!
+프로젝트를 변경하고 커밋을 만들었으니, 이제 풀 리퀘스트를 통해 제안된 변경 사항을 공유할 차례입니다!
 
-**What is a pull request?**: Collaboration happens on a _[pull request](https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request)_. The pull request shows the changes in your branch to other people and allows people to accept, reject, or suggest additional changes to your branch. In a side by side comparison, this pull request is going to keep the changes you just made on your branch and propose applying them to the `main` project branch. For more information about pull requests, see "[About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)".
+**풀 리퀘스트(Pull Request)란?**: 협업은 _[풀 리퀘스트](https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request)_ 에서 이루어집니다. 풀 리퀘스트는 여러분의 브랜치에 있는 변경 사항을 다른 사람들에게 보여주고, 브랜치에 대한 변경 사항을 수락, 거부 또는 추가 변경을 제안할 수 있게 합니다. 나란히 비교하면, 이 풀 리퀘스트는 여러분이 브랜치에서 방금 만든 변경 사항을 유지하고 `main` 프로젝트 브랜치에 적용하는 것을 제안합니다. 풀 리퀘스트에 대한 자세한 내용은 "[풀 리퀘스트에 대하여](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)"를 참고하세요.
 
-### :keyboard: Activity: Create a pull request
+### :keyboard: 활동: 풀 리퀘스트 만들기
 
-You may have noticed after your commit that a message displayed indicating your recent push to your branch and providing a button that says **Compare & pull request**.
+커밋 후 최근 브랜치로의 푸시를 알리는 메시지와 **Compare & pull request** 버튼이 표시되는 것을 보셨을 수 있습니다.
 
-![screenshot of message and button](../images/compare-pull-request-button.png)
+![메시지와 버튼 스크린샷](../images/compare-pull-request-button.png)
 
-To create a pull request automatically, click **Compare & pull request** button, and then skip to step 5 below. Alternately, you practice creating it manually using the first 4 steps.
+풀 리퀘스트를 자동으로 만들려면 **Compare & pull request** 버튼을 클릭한 다음 아래 5단계로 건너뛰세요. 또는 처음 4단계를 사용하여 수동으로 만드는 연습을 해보세요.
 
-1. In the header menu of your repository, click the **Pull requests** tab .
-2. Click the **New pull request** button.
-3. Select the following branches using the dropdown menus.
+1. 저장소 헤더 메뉴에서 **Pull requests** 탭을 클릭하세요.
+2. **New pull request** 버튼을 클릭하세요.
+3. 드롭다운 메뉴를 사용하여 다음 브랜치를 선택하세요.
    
    - **base:** `main`
    - **compare:** `my-first-branch`
 
-   ![screenshot showing both branch selections](../images/branch-selection-comparison.png)
+   ![두 브랜치 선택을 보여주는 스크린샷](../images/branch-selection-comparison.png)
 
-4. Click **Create pull request**.
+4. **Create pull request**를 클릭하세요.
 
-5. Enter a title for your pull request. By default, the title will automatically be the name of your branch. For this exercise, let's edit the field to say `Add my first file`.
+5. 풀 리퀘스트의 제목을 입력하세요. 기본적으로 제목은 자동으로 브랜치 이름이 됩니다. 이 실습에서는 필드를 `Add my first file`로 편집해 봅시다.
 
-6. The next field helps you provide a **description** of the changes you made. Please enter a short description of what you’ve accomplished so far. As a reminder, you have: created a new branch, created a file, and made a commit.
+6. 다음 필드는 변경 사항에 대한 **설명**을 제공하는 데 도움이 됩니다. 지금까지 수행한 작업에 대한 짧은 설명을 입력하세요. 참고로, 여러분은 새 브랜치를 만들고, 파일을 만들고, 커밋을 했습니다.
 
-   ![screenshot showing pull request](../images/create-pull-request-form.png)
+   ![풀 리퀘스트를 보여주는 스크린샷](../images/create-pull-request-form.png)
 
-7. Click **Create pull request**.
+7. **Create pull request**를 클릭하세요.
 
-8. Now that you've started a place to collaborate, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
+8. 협업 공간을 시작했으므로, Mona가 이미 여러분의 작업을 확인하고 있을 것입니다. 잠시 기다리면서 댓글을 주시하세요. 진행 정보와 다음 레슨이 표시됩니다.
 
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>문제가 있나요? 🤷</summary><br/>
 
-If you don't get feedback, here are some things to check:
-- Make sure your pull request title is correct.
-- Ensure your pull request has a description.
+피드백을 받지 못하면 다음을 확인하세요:
+- 풀 리퀘스트 제목이 올바른지 확인하세요.
+- 풀 리퀘스트에 설명이 있는지 확인하세요.
 
 </details>

@@ -1,9 +1,9 @@
-name: Step 3 # Open a pull request
+name: Step 3 # 풀 리퀘스트 열기
 
-# Checks if the learner completed tasks for step 3.
-# - Triggers when the user creates or edits the pull request.
-# - Checks the pull request title and description. Adds a PR comment.
-# - If all checks pass, the workflow is disabled so it doesn't run again. As such, workflow status badge will change to green.
+# 학습자가 3단계 작업을 완료했는지 확인합니다.
+# - 사용자가 풀 리퀘스트를 생성하거나 편집하면 트리거됩니다.
+# - 풀 리퀘스트 제목과 설명을 확인합니다. PR 댓글을 추가합니다.
+# - 모든 검사가 통과하면 워크플로우가 비활성화되어 다시 실행되지 않습니다.
 
 on:
   pull_request:
@@ -28,11 +28,11 @@ jobs:
     if: |
       !github.event.repository.is_template &&
       github.head_ref == 'my-first-branch'
-    name: Find Exercise Issue
-    uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.0
+    name: 실습 이슈 찾기
+    uses: skills-kr/exercise-toolkit/.github/workflows/find-exercise-issue.yml@kr-v0.6.0
 
   check_step_work:
-    name: Check step work
+    name: 단계 작업 확인
     runs-on: ubuntu-latest
     needs: find_exercise
     env:
@@ -43,14 +43,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get response templates
+      - name: 응답 템플릿 가져오기
         uses: actions/checkout@v4
         with:
-          repository: skills/exercise-toolkit
+          repository: skills-kr/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.7.0
+          ref: kr-v0.6.0
 
-      - name: Find last comment
+      - name: 마지막 댓글 찾기
         id: find-last-comment
         uses: peter-evans/find-comment@v3
         with:
@@ -58,7 +58,7 @@ jobs:
           issue-number: ${{ env.ISSUE_NUMBER }}
           direction: last
 
-      - name: Update comment - checking work
+      - name: 댓글 업데이트 - 작업 확인 중
         uses: GrantBirki/comment@v2.1.1
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
@@ -69,7 +69,7 @@ jobs:
 
       # START: Check practical exercise
 
-      - name: Check PR title for keyphrase
+      - name: PR 제목에서 키워드 확인
         id: check-pr-title
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
@@ -78,7 +78,7 @@ jobs:
           text: ${{ github.event.pull_request.title }}
           case-sensitive: false
 
-      - name: Check PR description is non-empty
+      - name: PR 설명이 비어있지 않은지 확인
         id: check-pr-description
         continue-on-error: true
         run: |
@@ -91,7 +91,7 @@ jobs:
         env:
           PR_BODY: ${{ github.event.pull_request.body }}
 
-      - name: Update comment - step results
+      - name: 댓글 업데이트 - 단계 결과
         uses: GrantBirki/comment@v2.1.1
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
@@ -107,12 +107,12 @@ jobs:
               - description: ${{ steps.check-pr-description.outputs.STEP_MESSAGE }}
                 passed: ${{ steps.check-pr-description.outcome == 'success' }}
 
-      - name: Fail job if not all checks passed
+      - name: 모든 검사가 통과하지 않으면 실패
         if: contains(steps.*.outcome, 'failure')
         run: exit 1
 
   post_next_step_content:
-    name: Post next step content
+    name: 다음 단계 내용 게시
     needs: [find_exercise, check_step_work]
     runs-on: ubuntu-latest
     env:
@@ -123,14 +123,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get response templates
+      - name: 응답 템플릿 가져오기
         uses: actions/checkout@v4
         with:
-          repository: skills/exercise-toolkit
+          repository: skills-kr/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.7.0
+          ref: kr-v0.6.0
 
-      - name: Create comment - step finished
+      - name: 댓글 생성 - 단계 완료
         uses: GrantBirki/comment@v2.1.1
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
@@ -139,23 +139,43 @@ jobs:
           vars: |
             next_step_number: 4
 
-      - name: Create comment - add step content
+      - name: 댓글 생성 - 단계 내용 추가
         uses: GrantBirki/comment@v2.1.1
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
           issue-number: ${{ env.ISSUE_NUMBER }}
           file: ${{ env.STEP_4_FILE }}
 
-      - name: Create comment - watching for progress
+      - name: 댓글 생성 - 진행 상황 확인 중
         uses: GrantBirki/comment@v2.1.1
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
           issue-number: ${{ env.ISSUE_NUMBER }}
           file: exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
 
-      - name: Disable current workflow and enable next one
+      - name: 현재 워크플로우 비활성화 및 다음 워크플로우 활성화
         run: |
           gh workflow disable "${{github.workflow}}"
           gh workflow enable "Step 4"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Workshop Tracker에 단계 보고
+        if: success()
+        continue-on-error: true
+        run: |
+          SESSION_ID=$(jq -r '.sessionId' .github/workshop-config.json)
+          TRACK=$(jq -r '.track' .github/workshop-config.json)
+          API_URL=$(jq -r '.apiUrl' .github/workshop-config.json)
+          curl -s -X POST "$API_URL" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "sessionId": "'"$SESSION_ID"'",
+              "type": "step",
+              "step": 3,
+              "description": "PR 열기",
+              "username": "'"$GITHUB_ACTOR"'",
+              "repo": "'"$GITHUB_REPOSITORY"'",
+              "track": "'"$TRACK"'",
+              "runId": "'"$GITHUB_RUN_ID"'"
+            }' || true
