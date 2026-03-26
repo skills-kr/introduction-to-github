@@ -11,7 +11,7 @@ _브랜치를 만들었습니다! :tada:_
 다음 단계는 GitHub에서 변경 사항을 커밋하는 과정을 안내합니다. 커밋은 파일 추가/삭제/이름 변경 및 파일 내용 수정과 같은 프로젝트 변경 사항을 기록합니다. 이 실습에서는 새 브랜치에 새 파일을 추가하는 것이 커밋이 됩니다.
 
 > [!NOTE]
-> `.md`는 마크다운 파일을 만드는 파일 확장자입니다. 마크다운에 대해 더 알아보려면 문서의 "[기본 글쓰기 및 서식 구문](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)"을 방문하거나 "[마크다운으로 소통하기](https://github.com/skills/communicate-using-markdown)" Skills 실습을 수행하세요.
+> `.md`는 마크다운 파일을 만드는 파일 확장자입니다. 마크다운에 대해 더 알아보려면 문서의 "[기본 글쓰기 및 서식 구문](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)"을 방문하거나 "[마크다운으로 소통하기](https://github.com/skills-kr/communicate-using-markdown)" Skills 실습을 수행하세요.
 
 1. 저장소 헤더 메뉴의 **< > Code** 탭에서 새 브랜치 `my-first-branch`에 있는지 확인하세요.
 
